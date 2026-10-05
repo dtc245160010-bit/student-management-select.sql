@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  height: 90px;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+nav {
+  height: 55px;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  gap: 8px;
+}
+
+.cot-trai {
+  width: 68%;
+}
+
+section {
+  height: 125px;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+article {
+  height: 125px;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  width: 32%;
+  min-height: 258px;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 60px;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
