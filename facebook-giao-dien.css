@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1877f2;
+  width: 180px;
+}
+
+.search {
+  width: 300px;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  outline: none;
+  font-size: 14px;
+}
+
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 15px;
+}
+
+/* ================= LAYOUT ================= */
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+/* ================= SIDEBAR LEFT ================= */
+
+.sidebar-left {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 240px;
+  height: calc(100vh - 60px);
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.sidebar-left li {
+  padding: 13px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar-left li:hover {
+  background-color: #ddd;
+}
+
+/* ================= MAIN ================= */
+
+.main-content {
+  width: 600px;
+  margin-left: 300px;
+  margin-right: 30px;
+}
+
+/* ================= CREATE POST ================= */
+
+.create-post {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.post-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-top input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  outline: none;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.post-actions button,
+.post-buttons button {
+  border: none;
+  background: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.post-actions button:hover,
+.post-buttons button:hover {
+  background-color: #f0f2f5;
+}
+
+/* ================= POST ================= */
+
+.post {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-header p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #65676b;
+}
+
+.post-text {
+  line-height: 1.5;
+}
+
+.post-image {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.image-one {
+  background-color: #1877f2;
+}
+
+.image-two {
+  background-color: #42b72a;
+}
+
+.post-stats {
+  padding: 12px 5px;
+  color: #65676b;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-stats span {
+  float: right;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+
+/* ================= AVATAR ================= */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1877f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.small-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #1877f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* ================= SIDEBAR RIGHT ================= */
+
+.sidebar-right {
+  width: 260px;
+  padding: 10px;
+}
+
+.sidebar-right h3 {
+  color: #65676b;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.contact:hover {
+  background-color: #ddd;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 1000px) {
+  .sidebar-right {
+    display: none;
+  }
+
+  .main-content {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sidebar-left {
+    display: none;
+  }
+
+  .main-content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header .search {
+    width: 180px;
+  }
+
+  .header-right span:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .header {
+    padding: 0 10px;
+  }
+
+  .header-right {
+    gap: 10px;
+  }
+
+  .header .search {
+    width: 140px;
+  }
+}
