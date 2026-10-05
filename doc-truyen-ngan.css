@@ -1,0 +1,97 @@
+/* Thiết lập chung */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  color: #333;
+  background-color: #f7f3ed;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Phần đầu trang */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #7b3f00;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gioi-thieu {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+
+/* Khối mục lục */
+.muc-luc {
+  background-color: #fff;
+  border: 2px solid #c8a97e;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 8px;
+}
+
+.muc-luc h2 {
+  color: #7b3f00;
+  text-align: center;
+}
+
+.muc-luc h5 {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.muc-luc a {
+  color: #5a3d2b;
+  text-decoration: none;
+}
+
+.muc-luc a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+/* Nội dung truyện */
+.noi-dung-truyen {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.noi-dung-truyen h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #7b3f00;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.noi-dung-truyen p {
+  line-height: 1.8;
+  text-align: justify;
+  text-indent: 40px;
+  margin-bottom: 15px;
+}
+
+/* Chân trang */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
